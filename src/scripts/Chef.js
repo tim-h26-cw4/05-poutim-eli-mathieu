@@ -18,7 +18,7 @@ export default class Chef {
     btnOrder.addEventListener('click', this.sendOrder.bind(this));
   }
   sendOrder() {
-    const active = this.elements.querySelectorAll('.is-active');
+    const active = this.elements.querySelectorAll('.js-number-active');
     this.elements.querySelector('.js-container').innerHTML = '';
     console.log(this.container.length);
     const paragraphe = document.createElement('p');
