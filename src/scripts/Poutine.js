@@ -24,7 +24,7 @@ export default class Poutine {
   }
   updatePhoto() {
     console.log('allo');
-    const img = this.element.querySelector('.poutine__image');
+    const img = this.element.querySelector('.js-image');
 
     img.src = `./assets/images/${this.selectedType}.png`;
 
