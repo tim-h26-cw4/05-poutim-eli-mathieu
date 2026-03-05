@@ -2,7 +2,7 @@ import Poutine from './Poutine.js';
 export default class Chef {
   constructor(elements) {
     this.elements = elements;
-    this.poutines = this.elements.querySelectorAll('.poutine');
+    this.poutines = this.elements.querySelectorAll('.js-poutine');
     this.container = [];
 
     this.init();
@@ -14,7 +14,7 @@ export default class Chef {
       this.container.push(instance);
       console.log('test2');
     }
-    const btnOrder = this.elements.querySelector('.button-secondary');
+    const btnOrder = this.elements.querySelector('.js-button-secondary');
     btnOrder.addEventListener('click', this.sendOrder.bind(this));
   }
   sendOrder() {
