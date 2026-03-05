@@ -25,7 +25,7 @@ export default class Poutine {
   updatePhoto() {
     console.log('allo');
     const img = this.element.querySelector('.js-image');
-    this.element.classList.add('js-number-active');
+    this.element.classList.add('js-number-active'); // c'est pour le nombres de poutines.
     img.src = `./assets/images/${this.selectedType}.png`;
 
     img.classList.add('is-active');
