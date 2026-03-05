@@ -18,12 +18,11 @@ export default class Chef {
     btnOrder.addEventListener('click', this.sendOrder.bind(this));
   }
   sendOrder() {
-    this.elements.querySelector('.js-container').remove(paragraphe);
+    const active = this.elements.querySelectorAll('.is-active');
+    this.elements.querySelector('.js-container').innerHTML = '';
     console.log(this.container.length);
     const paragraphe = document.createElement('p');
-
-    paragraphe.innerText = `Nombre total de poutine(s) : ${this.container.length}`;
-
+    paragraphe.innerText = `Nombre total de poutine(s) : ${active.length}`;
     this.elements.querySelector('.js-container').appendChild(paragraphe);
   }
 }
