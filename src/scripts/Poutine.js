@@ -1,7 +1,7 @@
 export default class Poutine {
   constructor(element) {
     this.element = element;
-    this.types = document.querySelectorAll('.js-type');
+    this.types = this.element.querySelectorAll('.js-type');
     this.selectedType = '';
     this.init();
   }
@@ -28,6 +28,6 @@ export default class Poutine {
 
     img.src = `./assets/images/${this.selectedType}.png`;
 
-    //this.element.classList.add('is-active');
+    img.classList.add('is-active');
   }
 }
