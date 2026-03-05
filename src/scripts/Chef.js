@@ -20,7 +20,7 @@ export default class Chef {
   sendOrder() {
     console.log(this.container.length);
     const paragraphe = this.elements.createElement('p');
-    paragraphe.innerText = this.container.length;
+    paragraphe.innerText = `${this.container.length}`;
     this.elements.querySelector('.js-container').appendChild(paragraphe);
   }
 }
